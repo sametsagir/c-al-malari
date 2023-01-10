@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Samet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-02 09:00:21 PM"/>
+        <attribute name="created" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMDI7MDg6NTY6MjYgUE07Mjg4OA=="/>
+        <attribute name="edited" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMDI7MDk6MDA6MjEgUE07MTsyOTgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <input variable="N"/>
+            <assign variable="N" expression="N-1"/>
+            <if expression="N%4==0">
+                <then>
+                    <output expression="&quot;H&#304;LBERT SAY&#304;D&#304;R&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;H&#304;LBERT SAY&#304; DEG&#304;LD&#304;R&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

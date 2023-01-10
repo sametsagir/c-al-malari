@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Samet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-02 09:12:04 PM"/>
+        <attribute name="created" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMDI7MDk6MDA6MzkgUE07Mjg4Mg=="/>
+        <attribute name="edited" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMDI7MDk6MTI6MDQgUE07MTsyOTg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, x, y" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <if expression="a*x+b*y+c==0">
+                <then>
+                    <output expression="&quot;dogrunun uzerinde&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="abs(a*x+b*y+c)/(a^2+b^2)^(1/2)" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

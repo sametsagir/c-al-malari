@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Samet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-02 10:16:47 PM"/>
+        <attribute name="created" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMDI7MTA6MTA6MzcgUE07Mjg3Mw=="/>
+        <attribute name="edited" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMDI7MTA6MTY6NDcgUE07MTsyOTg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <for variable="sayac" start="0" end="n-1" direction="inc" step="1">
+                <output expression="(2^sayac*sayac)+1" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

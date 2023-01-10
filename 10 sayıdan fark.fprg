@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Samet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-16 07:10:19 PM"/>
+        <attribute name="created" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMTY7MDY6NDA6NTggUE07Mjg4OQ=="/>
+        <attribute name="edited" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMTY7MDc6MTA6MTkgUE07MTsyOTky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="t1, t2, sayac, x, b, k, ort1, ort2, s, c" type="Real" array="False" size=""/>
+            <input variable="x"/>
+            <assign variable="sayac" expression="1"/>
+            <assign variable="b" expression="x"/>
+            <assign variable="k" expression="x"/>
+            <assign variable="t1" expression="x"/>
+            <assign variable="t2" expression="0"/>
+            <while expression="sayac&lt;10">
+                <input variable="x"/>
+                <assign variable="t1" expression="t1+x"/>
+                <if expression="x&gt;b">
+                    <then>
+                        <assign variable="b" expression="x"/>
+                    </then>
+                    <else>
+                        <if expression="x&lt;k">
+                            <then>
+                                <assign variable="k" expression="x"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="sayac" expression="sayac+1"/>
+            </while>
+            <assign variable="ort1" expression="t1/sayac"/>
+            <assign variable="ort2" expression="(k+b)/2"/>
+            <assign variable="c" expression="(ort1+ort2)/2"/>
+            <output expression="ort1" newline="True"/>
+            <output expression="ort2" newline="True"/>
+            <output expression="c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

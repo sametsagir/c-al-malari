@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Samet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-27 09:24:27 PM"/>
+        <attribute name="created" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTAtMjc7MDk6MDQ6MzkgUE07Mjg5Mg=="/>
+        <attribute name="edited" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTAtMjc7MDk6MjQ6MjcgUE07MTE7MzA0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bolunen, bolen" type="Integer" array="False" size=""/>
+            <input variable="bolunen"/>
+            <input variable="bolen"/>
+            <while expression="bolunen&gt;=bolen">
+                <assign variable="bolunen" expression="bolunen-bolen"/>
+                <if expression="bolunen=0">
+                    <then>
+                        <output expression="&quot;tam bolunur&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

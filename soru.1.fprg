@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Samet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-01 11:42:32 PM"/>
+        <attribute name="created" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMDE7MTE6MzQ6NTEgUE07Mjg3NQ=="/>
+        <attribute name="edited" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMDE7MTE6NDI6MzIgUE07MTsyOTgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, t1, t2, t3, sayac" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="t1" expression="0"/>
+            <assign variable="t2" expression="0"/>
+            <assign variable="t3" expression="0"/>
+            <for variable="sayac" start="1" end="n-1" direction="inc" step="1">
+                <assign variable="t1" expression="t1+sayac"/>
+            </for>
+            <output expression="t1" newline="True"/>
+            <for variable="sayac" start="1" end="n-1" direction="inc" step="2">
+                <assign variable="t2" expression="t2+sayac"/>
+            </for>
+            <output expression="t2" newline="True"/>
+            <for variable="sayac" start="2" end="n-1" direction="inc" step="2">
+                <assign variable="t3" expression="t3+sayac"/>
+            </for>
+            <output expression="t3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

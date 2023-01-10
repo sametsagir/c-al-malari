@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Samet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 11:13:36 AM"/>
+        <attribute name="created" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTAtMjg7MTA6NTQ6MjYgQU07Mjg3MQ=="/>
+        <attribute name="edited" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTAtMjg7MTE6MTM6MzYgQU07NjsyOTgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="h, vx, vy, v, g, t, x" type="Integer" array="False" size=""/>
+            <input variable="h"/>
+            <input variable="g"/>
+            <assign variable="t" expression="((2*h)/g)^(1/2)"/>
+            <output expression="t" newline="True"/>
+            <input variable="vx"/>
+            <input variable="vy"/>
+            <assign variable="v" expression="(vx^2+vy^2)^(1/2)"/>
+            <output expression="v" newline="True"/>
+            <input variable="vx"/>
+            <output expression="t" newline="True"/>
+            <assign variable="x" expression="vx*t"/>
+            <output expression="x" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

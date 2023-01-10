@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Samet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-13 07:16:58 PM"/>
+        <attribute name="created" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMTM7MDc6MDY6NTkgUE07Mjg5MA=="/>
+        <attribute name="edited" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMTM7MDc6MTY6NTggUE07MTsyOTk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="k, b, s, a, x" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <assign variable="b" expression="a"/>
+            <assign variable="k" expression="a"/>
+            <assign variable="s" expression="0"/>
+            <while expression="s&lt;10">
+                <input variable="x"/>
+                <if expression="x&gt;b">
+                    <then>
+                        <assign variable="b" expression="x"/>
+                    </then>
+                    <else>
+                        <if expression="x&lt;k">
+                            <then>
+                                <assign variable="k" expression="x"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="s" expression="s+1"/>
+            </while>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

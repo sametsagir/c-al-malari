@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Samet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-13 07:22:58 PM"/>
+        <attribute name="created" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMTM7MDc6MTg6NTYgUE07Mjg5MA=="/>
+        <attribute name="edited" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTEtMTM7MDc6MjI6NTggUE07MTsyOTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kalan, s, tersi, a" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <assign variable="tersi" expression="0"/>
+            <while expression="a&gt;0">
+                <assign variable="kalan" expression="a%10"/>
+                <assign variable="tersi" expression="(tersi*10)+kalan"/>
+                <assign variable="a" expression="a/10"/>
+            </while>
+            <output expression="tersi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

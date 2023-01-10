@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Samet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-27 05:16:11 PM"/>
+        <attribute name="created" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTAtMjc7MDU6MDk6MTIgUE07Mjg4NA=="/>
+        <attribute name="edited" value="U2FtZXQ7REVTS1RPUC1UQ1NINlRKOzIwMjItMTAtMjc7MDU6MTY6MTEgUE07MjsyOTkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="birincidikkenar, ikincidikkenar, ucuncukenar" type="Integer" array="False" size=""/>
+            <input variable="birincidikkenar"/>
+            <input variable="ikincidikkenar"/>
+            <assign variable="ucuncukenar" expression="(birincidikkenar^2+ikincidikkenar^2)^(1/2)"/>
+            <output expression="&quot;hipoten&#252;s&quot;&amp;ucuncukenar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
